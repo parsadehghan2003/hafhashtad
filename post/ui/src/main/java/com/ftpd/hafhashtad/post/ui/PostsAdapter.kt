@@ -21,12 +21,12 @@ import kotlinx.android.synthetic.main.post_cell.view.titleTextView
 import com.ftpd.hafhashtad.base_android.adapter_utils.Change
 
 class PostsAdapter(val context: Context) : ListAdapter<PostData, PostsAdapter.ViewHolder>(
-    AsyncDifferConfig.Builder(PlacesDiffUtil()).build()
+    AsyncDifferConfig.Builder(PostsDiffUtil()).build()
 ), Filterable {
 
     var postFilterList = mutableListOf<PostData>()
 
-    private class PlacesDiffUtil : DiffUtil.ItemCallback<PostData>() {
+    private class PostsDiffUtil : DiffUtil.ItemCallback<PostData>() {
         override fun areItemsTheSame(oldItem: PostData, newItem: PostData): Boolean {
             return oldItem.id == newItem.id
         }
