@@ -68,7 +68,7 @@ class PostsAdapter(val context: Context) : ListAdapter<PostData, PostsAdapter.Vi
 
         fun bindPostCell(postData: PostData) {
             titleTextView.text = postData.title
-            priceTextView.text = postData.price
+            priceTextView.text = "${postData.price}+$"
             categoryTextView.text = postData.category
             postData.rating?.let {
                 rateTextView.text = "${it.rate} (${it.count})"
