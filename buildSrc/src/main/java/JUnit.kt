@@ -16,7 +16,7 @@ object JUnit {
     private const val truthVersion = "1.1.3"
     private const val truth = "com.google.truth:truth:$truthVersion"
 
-    private const val mockitoCoreVersion = "3.11.2"
+    private const val mockitoCoreVersion = "3.12.4"
     private const val mockitoCore = "org.mockito:mockito-core:$mockitoCoreVersion"
 
     private const val test_core_version = "1.2.0"

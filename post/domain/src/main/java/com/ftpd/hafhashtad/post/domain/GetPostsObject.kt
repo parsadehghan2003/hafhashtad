@@ -11,7 +11,7 @@ sealed class GetPostsObject : BaseDomain {
             get() = ActionType.GET_POSTS_REQUEST
     }
 
-    data class GetPostsObjectResponse(
+    open class GetPostsObjectResponse(
         val posts: PostsObject,
     ) : GetPostsObject() {
         override val actionType: ActionType

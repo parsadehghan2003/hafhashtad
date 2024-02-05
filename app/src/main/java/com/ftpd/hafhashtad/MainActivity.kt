@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         NavigationHelper.navigateToDestination(
             DestinationFragment.POSTS_FRAGMENT,
-            replace = false,
+            replace = true,
             addToBackStack = false,
         )
         lifecycleScope.launch {

@@ -24,12 +24,4 @@ class PostDataStorageImpl @Inject constructor(
             copyFromRealm(where(RealmPost::class).findAll()).toRealmList()
         }
 
-//    override suspend fun deleteAllPosts(realm: TypedRealm?) {
-//
-//        databaseQueue.writeQueue(realm) {
-//
-//            realmList
-//        }
-//    }
-
 }

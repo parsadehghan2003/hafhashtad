@@ -1,9 +1,7 @@
 package com.ftpd.post.framework.di
 
-import androidx.datastore.core.DataStore
-import androidx.datastore.preferences.core.Preferences
 import com.ftpd.post.framework.PostLocalServiceImpl
-import com.ftpd.post.framework.PlaceRemoteServiceImpl
+import com.ftpd.post.framework.PostRemoteServiceImpl
 import com.ftpd.hafhashtad.post.data_source.service.PostLocalService
 import com.ftpd.hafhashtad.post.data_source.service.PostRemoteService
 import com.ftpd.hafhashtad.database.data_source.service.PostDataStorage
@@ -30,7 +28,7 @@ object PlaceFrameWorkModule {
     @Provides
     @ViewModelScoped
     fun providePlaceRemoteService(fakeApiService: FakeApiService): PostRemoteService {
-        return PlaceRemoteServiceImpl(fakeApiService)
+        return PostRemoteServiceImpl(fakeApiService)
     }
 
 }

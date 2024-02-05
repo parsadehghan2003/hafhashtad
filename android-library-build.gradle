@@ -66,4 +66,14 @@ dependencies {
     kapt AndroidX.lifecycle_extenteions_compiler
     implementation AndroidX.fragment
     implementation "io.realm.kotlin:library-base:1.8.0"
+
+    testImplementation JUnit.jUnit
+    testImplementation AndroidXTest.mockito
+    testImplementation JUnit.mockitoCore
+    testImplementation Kotlinx.coroutineTest
+
+    androidTestImplementation AndroidXTest.jUnitInstrumentTest
+    androidTestImplementation AndroidXTest.espresso
+    testImplementation JUnit.coreTesting
+
 }
